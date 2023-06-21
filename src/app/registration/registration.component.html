@@ -1,0 +1,255 @@
+<div class="container w-50  p-3 bordered shadow">
+    <h2 class="text-center">Registration Form</h2>
+
+    <form [formGroup]="RegistrationForm">
+        <div class="mb-3">
+          <label for="user_name" >User Name</label>
+          <input type="text" class="form-control" id="user_name" formControlName="user_name">
+        </div>
+        <div class="mb-3">
+          <label for="user_email" >Email Address</label>
+          <input type="text" class="form-control" id="user_email" formControlName="user_email">
+        </div>
+        <div class="mb-3">
+            <label for="user_contact_no" >Contact Number</label>
+            <input type="text"  class="form-control" id="user_contact_no" formControlName="user_contact_no">
+          </div>
+          <div class="mb-3">
+            <label for="user_password" >Password</label>
+            <input type="password" class="form-control" id="user_password" formControlName="user_password">
+          </div>
+          <label for="user_gender" class="px-3">Gender : </label>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="gender" id="inlineRadio1" value="Male" formControlName="user_gender">
+            <label class="form-check-label" for="inlineRadio1">Male</label>
+          </div>
+          <div class="form-check form-check-inline mb-4">
+            <input class="form-check-input" type="radio" name="gender" id="inlineRadio2" value="Female" formControlName="user_gender">
+            <label class="form-check-label" for="inlineRadio2">Female</label>
+          </div> 
+          <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio" name="gender" id="inlineRadio3" value="Other" formControlName="user_gender">
+          <label class="form-check-label" for="inlineRadio3">Other</label>
+        </div>
+        <button type="submit" class="btn btn-primary login" (click)="save()">Register</button>
+        <button type="submit" class="btn btn-primary login mx-2" routerLink="/Home">Show Members</button>
+      </form>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- 
+<nav aria-label="Page navigation example">
+  <ul class="pagination">
+    
+  </ul>
+</nav> -->

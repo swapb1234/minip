@@ -1,0 +1,60 @@
+<section>
+    <h2 class="text-center p-3">User List</h2>
+<!-- <div class="container mt-4 border">
+  <button type="submit" class="btn btn-primary m-2" routerLink="/Registration">Add User</button>
+    <table class="table table bordered text-center">
+        <thead>
+          <tr>
+            <th scope="col">User Id</th>
+            <th scope="col">User Name</th>
+            <th scope="col">Email address</th>
+            <th scope="col">Contact Number</th>
+            <th scope="col">Password</th>
+            <th scope="col">Gender</th>
+            <th scope="col">Active</th>
+          </tr>
+        </thead>
+        <tbody>
+             <tr *ngFor="let item of UserList">
+              <td>{{item.user_id}}</td>
+            <th scope="row">{{item.user_name}}</th>
+            
+            <td>{{item.user_email}}</td>
+            <td>{{item.user_phone_no}}</td>
+            <td>{{item.user_pwd}}</td>
+            <td>{{item.user_gender}}</td>
+            <td><a ><button class="btn btn-success mx-2">Update</button></a>  <a ><button class="btn btn-danger"  >Delete</button></a></td>
+          </tr>
+         
+        </tbody>
+      </table>
+</div> -->
+
+
+
+
+<div class="container">
+  <div class="row">
+    <div class="col-sm-4 borderd shadow mb-2 borderd shadow" *ngFor="let item of UserList; let i = index">
+      <div class="card bordered">
+        <div class="card-body" >
+        <div class="row">
+          <div class="col-sm-3">      
+          </div>
+          <div class="col-sm-12 px-2">
+            <p class="card-text"> <label for=""><b>Id:-</b></label> {{item.user_id+i}}</p>
+            <h5 class="card-title"><label for=""><b>User Name:-</b> </label>{{item.user_name}}</h5>
+            <p class="card-text"><label for=""><b>Email Address:-</b> </label>{{item.user_email}}</p>
+            <p class="card-text"><label for=""><b>Mobile Number:-</b> </label>{{item.user_phone_no}}</p>
+            <p class="card-text"><label for=""><b>Password:-</b> </label>{{item.user_pwd}}</p>
+            <p class="card-text"><label for=""><b>Gender:-</b> </label>{{item.user_gender}}</p>
+            <button class="btn btn-success mx-2">Update</button>
+            <button class="btn btn-danger">Delete</button>
+          </div>
+        </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</section>

@@ -1,0 +1,18 @@
+<div class="container  mt-2 p-4 w-25 bordered shadow">
+    <h2 class="text-center">Login</h2>
+
+    <form [formGroup]="Login">
+        <div class="mb-3">
+          <label for="user_email" class="form-label">Email Address</label>
+          <input type="email" class="form-control" id="user_email" formControlName="user_email">
+        </div>
+        <div class="mb-3">
+          <label for="user_pwd" class="form-label">Password</label>
+          <input type="text" class="form-control" id="user_pwd" formControlName="user_pwd">
+        </div>
+        
+        <button type="submit" class="btn btn-primary login"  (click)="login()">Log In</button>
+        <button type="submit" class="btn btn-primary signup" routerLink="/Registration">Registration</button>
+      </form>
+</div>
+
